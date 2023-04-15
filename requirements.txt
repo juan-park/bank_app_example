@@ -1,0 +1,4 @@
+loguru
+mysql-connector-python
+click
+PyYAML
