@@ -1,5 +1,7 @@
 import click
 from src.db import create_table, seed_db
+from src.app import App
+
 
 @click.group()
 def main():
@@ -14,7 +16,8 @@ def init_db():
 
 @main.command()
 def run():
-    pass
+    app = App()
+    app.mainloop()
 
 if __name__ == '__main__':
     main()
